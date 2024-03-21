@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+    <html lang="fr">
+
+        <head>
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">            
+
+            <title>La Pizza de Titi</title>
+            
+        </head>
+
+        <body>  
+
+            <h1> La Pizza de Titi </h1>
+            
+            <br><br>
+
+            <form id="subnetForm" class="mt-4 p-4 border rounded">
+                
+                <img src="dominos-pizza-logo-1.png">
+                
+                <br><br><br>
+                
+                <div id="login" class="form-group">
+                    <h2> Connexion </h2>
+                    <label for="ID">Nom D'utilisateur:</label>
+                    <input type="text" class="form-control" id="ID" required>
+                    <br><br>
+                    <label for="MDP">Mot de passe:</label>
+                    <input type="text" class="form-control" id="MDP" required>
+                </div>
+                
+                <br><br><br>
+
+                <div id="taillepizza" class="form-group">
+                    <h2>Taille pizza</h2>
+                    <label>
+                        <input type="radio" name="choix" value="option1"> 
+                        <button type="button">M = 8€</button>
+                    </label>
+                    <label>
+                        <input type="radio" name="choix" value="option2"> 
+                        <button type="button">L = 10€</button>
+                    </label>
+                    <label>
+                        <input type="radio" name="choix" value="option3"> 
+                        <button type="button">XL = 12€</button>
+                    </label>
+                </div>
+
+                <br><br><br>
+                
+                <div id="typepizza" class="form-group">
+                    <h2> Type de pizza </h2>
+                    <label>
+                        <input type="radio" name="choix" value="option1"> 
+                        <button type="button">Pizza Cassoulet (+2€)</button>
+                    </label>
+                    <label>
+                        <input type="radio" name="choix" value="option2"> 
+                        <button type="button">Pizza Sushi (+3€)</button>
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="choix" value="option3"> 
+                        <button type="button">Pizza Céréale</button>
+                    </label>
+                </div>
+
+                <br><br><br>
+
+                <div id="typepate" class="form-group">
+                    <h2>Type de pâte</h2>
+                    <label>
+                        <input type="radio" name="choix" value="option1"> 
+                        <button type="button">Fine</button>
+                    </label>
+                    <label>
+                        <input type="radio" name="choix" value="option2"> 
+                        <button type="button">Épaisse</button>
+                    </label>
+                    <label>
+                        <input type="radio" name="choix" value="option3"> 
+                        <button type="button">Fourrée au fromage</button>
+                    </label>
+                </div>
+                <br><br><br>
+                
+                <div id="supplement" class="form-group">
+                    <br><br><br>
+                    <h2>Ajout d'un ou plusieurs supplément</h2>
+                    <input type="checkbox" id="olives" name="choices" value="Olives Bleues">
+                    <label for="olives">Olive Bleue (+0,75€)</label><br><br>
+                    <input type="checkbox" id="nutella" name="choices" value="Nutella">
+                    <label for="nutella">Nutella (+1€)</label><br><br>
+                    <input type="checkbox" id="camembert" name="choices" value="Camembert">
+                    <label for="camembert">Camembert (+0,75€)</label><br><br>
+                    <input type="checkbox" id="epinards" name="choices" value="Epinards">
+                    <label for="epinards">Epinard(+0,75€)</label><br><br>
+                    <input type="checkbox" id="NoixCoco" name="choices" value="NoixCoco">
+                    <label for="NoixCoco">Noix de coco(+1)</label><br><br>
+                </div>
+
+                <br><br>
+                
+                <div id="infoperso" class="form-group">
+                    <h2> Informations personnelles  </h2>
+                    <br>
+                    <label for="CB">Nom et prénom :</label>
+                    <input type="text" class="form-control" id="CB"required>
+                    <br><br><br>
+                    <p> (si vous avez un abonnement remplir si dessous, sinon laissez vide) </p>
+                    <label for="abonnement"> Numéro d'abonnée  :</label>
+                    <input type="text" class="form-control" id="abonnement"required>
+                    <br><br>  
+                </div>
+
+                <br><br><br>
+
+                <div id="livraison" class="form-group">
+                    <h2>Mode de livraison</h2>
+                    <label>
+                        <input type="radio" name="choix" value="option1"> 
+                        <button type="button">Sur place</button>
+                    </label>
+                    <label>
+                        <input type="radio" name="choix" value="option2"> 
+                        <button type="button">À emporter</button>
+                    </label>
+                    <br><br>
+                    <label for="Add">Adresses :</label>
+                    <input type="text" class="form-control" id="Add" required>
+                </div>
+
+                <br><br><br>
+            
+                <br><br>
+
+                <button type="submit" class="btn btn-primary">Commander</button>
+
+                <br><br>
+
+            </form>
+
+        </body>
+
+    </html>
